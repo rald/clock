@@ -1,5 +1,4 @@
 #include <dos.h>
-#include <conio.h>
 
 typedef void interrupt far (*fp)();
 fp old1c;
