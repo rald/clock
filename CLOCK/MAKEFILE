@@ -1,0 +1,13 @@
+all: clock.exe clock.com
+
+clock.exe: clock.c
+    tcc -mt clock
+
+clock.com: clock.exe
+    exe2bin clock.exe clock.com   
+
+clean:
+    del clock.exe
+    del clock.com
+    del *.obj
+
